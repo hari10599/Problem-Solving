@@ -8,11 +8,8 @@ public class Pivot_Middle_Element extends QuickSort{
             return;
         int middle = low + (high - low)/2;
         int pivot = partition(low, high, array[middle]);
-        
-        if(low < pivot - 1)
-            quicksort(low, pivot - 1);
-        if(pivot < high)
-            quicksort(pivot, high);
+        quicksort(low, pivot - 1);
+        quicksort(pivot, high);
             
     }
 
