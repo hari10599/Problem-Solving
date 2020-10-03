@@ -28,7 +28,6 @@ public class Pivot_Middle_Element extends QuickSort{
                 high--;
             }
         }
-
         return low;
     }
 
