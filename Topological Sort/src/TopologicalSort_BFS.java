@@ -11,7 +11,14 @@ public class TopologicalSort_BFS extends TopologicalSort{
         }
     }
 
-    void iterative(Queue<Integer> queue) {
+
+    void topologicalSort() {
+        Queue<Integer> queue = new LinkedList<>();
+        for(int i = 0; i < this.vertexCount; i++) {
+            if(this.indegree[i] == 0)
+                queue.add(i);
+        }
+
         while(!queue.isEmpty()) {
             int size = queue.size();
             while(size-- > 0) {
@@ -27,17 +34,8 @@ public class TopologicalSort_BFS extends TopologicalSort{
                 
             }
         }
-    }
-
-    void topologicalSort() {
-        Queue<Integer> queue = new LinkedList<>();
-        for(int i = 0; i < this.vertexCount; i++) {
-            if(this.indegree[i] == 0)
-                queue.add(i);
-        }
-
-        iterative(queue);
         print();
+    
     }
     
 }
