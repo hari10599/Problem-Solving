@@ -3,19 +3,14 @@ import java.util.*;
 public abstract class TopologicalSort {
     Map<Integer, List<Integer>> adjList;
     int vertexCount;
-    boolean []visited;
+    int []visited;
     List<Integer> result;
 
     TopologicalSort(Map<Integer, List<Integer>> adjList) {
         this.vertexCount = adjList.size();
         this.adjList = new HashMap<>(adjList);
-        this.visited = new boolean[this.vertexCount];
+        this.visited = new int[this.vertexCount];
         this.result = new ArrayList<>();
-    }
-
-    void clear() {
-        Arrays.fill(this.visited, false);
-        this.result.clear();
     }
 
     void print(){

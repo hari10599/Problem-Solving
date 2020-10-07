@@ -11,8 +11,16 @@ public class Main {
             adjList.get(i[0]).add(i[1]);
         
         TopologicalSort ts = new TopologicalSort_BFS(adjList);
+        System.out.print("BFS : ");
         ts.topologicalSort();
 
+        ts = new TopologicalSort_DFS(adjList);
+        System.out.print("DFS : ");
+        ts.topologicalSort();
+
+        ts = new TopologicalSort_ALL(adjList);
+        System.out.println("All topological sort : ");
+        ts.topologicalSort();
         
     }
 }

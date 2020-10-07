@@ -24,11 +24,11 @@ public class TopologicalSort_BFS extends TopologicalSort{
             while(size-- > 0) {
                 int vertex = queue.remove();
                 this.result.add(vertex);
-                this.visited[vertex] = true;
+                this.visited[vertex] = 1;
         
                 for(int v: this.adjList.get(vertex)) {
                     this.indegree[v]--;
-                    if(this.indegree[v] == 0 && !this.visited[v])
+                    if(this.indegree[v] == 0 && this.visited[v] == 0)
                         queue.add(v);
                 }
                 
