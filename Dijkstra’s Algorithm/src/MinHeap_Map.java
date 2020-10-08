@@ -113,7 +113,6 @@ public class MinHeap_Map {
         for(Node n: heap) {
             System.out.println(n.vertex + " " + n.weight + " " + position.get((n.vertex)));
         }
-        System.out.println("**");
     }
 
 
