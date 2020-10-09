@@ -20,7 +20,7 @@ public class App {
     }
 
     static int characterValue(String s, int i) {
-        return (int)s.charAt(i);
+        return (int)s.charAt(i); 
     }
 
     static void rabinKarp(String text, String pattern, int prime) {
