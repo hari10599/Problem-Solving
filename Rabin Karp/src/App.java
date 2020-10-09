@@ -14,7 +14,7 @@ public class App {
             for(int i = 0; i < pattern.length(); i++) {
                 if(pattern.charAt(i) != text.charAt(i+index))
                     return;
-            }
+            } 
             System.out.println("Pattern found at : " + index);
         }
     }
