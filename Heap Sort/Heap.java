@@ -1,5 +1,5 @@
 abstract class Heap {
-    int size;
+    int size; 
     int index;
     int[] heap;
 

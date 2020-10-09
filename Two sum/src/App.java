@@ -19,7 +19,7 @@ public class App {
     public static List<Pair> uniquePairs(int []array, int target) {
         List<Pair> result = new ArrayList<>();
         Set<Integer> values = new HashSet<>();
-        Set<Integer> diffSeen = new HashSet<>();
+        Set<Integer> diffSeen = new HashSet<>(); 
         
         for(int i: array) {
             int diff = target - i;
