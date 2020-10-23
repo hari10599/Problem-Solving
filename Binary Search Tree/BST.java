@@ -59,7 +59,7 @@ public class BST {
     }
 
     public void kthSmallest(int value) {
-        Node curr = root;
+        Node curr = root; 
         System.out.println(value + " Smallest: "+kthSmallest(curr, value-1));
     }
 
